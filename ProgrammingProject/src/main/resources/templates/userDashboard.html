@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Pizza</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      .tableOrders {
+        padding: 80px 500px;
+      }
+      .bg-1 {
+        background-color: #474e5d;
+        color: #555;
+      }
+      .bg-1 h3 {color: #fff;}
+
+      .bg-1 p {color: #fff;}
+
+      .list-group-item:first-child {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
+      .list-group-item:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+        .bg-4 {
+          background-color: #2f2f2f;
+          color: #ffffff;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Pizza Pizza</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="contactUs">Contact Us</a></li>
+                <li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">UserName
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="userDashboard">My Orders</a></li>
+                        <li><a href="userProfile">Edit Profile</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+<div class="bg-1">
+    <div class="tableOrders">
+        <h3 class="text-center">Welcome UserName</h3>
+        <table class="list-group-item">
+            <p>Current Order</p>
+            <th>
+                <tr>
+                    <td>Order Number: </td>
+                </tr>
+                <tr>
+                    <td>Total price: </td>
+                </tr>
+                <tr>
+                    <td>Status: </td>
+                </tr>
+            </th>
+        </table>
+
+        <table class="list-group-item">
+            <p>Past Orders</p>
+            <th>
+                <tr>
+                    <td>Order Number: </td>
+                </tr>
+                <tr>
+                    <td>Total price: </td>
+                </tr>
+                <tr>
+                    <td>Status: </td>
+                </tr>
+            </th>
+        </table>
+
+    </div>
+</div>
+
+</body>
+
+
+<footer class="container-fluid bg-4 text-center">
+    <p>Pizza Pizza  <span class="glyphicon glyphicon-copyright-mark"></span></p>
+</footer>

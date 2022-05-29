@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Pizza | Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        .bg-1 {
+            background-color: #474e5d;
+            color: #ffffff;
+        }
+        .bg-4 {
+            background-color: #2f2f2f;
+            color: #ffffff;
+        }
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+
+        .bg-grey {
+           background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Pizza Pizza</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="menu">Menu</a></li>
+                <li><a href="contactUs">Contact Us</a></li>
+                <li><a href="login">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h2 class="text-center">CONTACT US</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p><span class="glyphicon glyphicon-map-marker"></span> Address</p>
+            <p><span class="glyphicon glyphicon-phone"></span> Phone</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> Email</p>
+        </div>
+        <div class="col-sm-7">
+            <div class="row">
+                <form action="">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" name="firstName" placeholder="First Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" name="lastName" placeholder="Last Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" name="email" placeholder="Email" type="email" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" name="phoneNumber" placeholder="Phone Number" type="text" required>
+                    </div>
+
+                    <textarea class="form-control" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-right" type="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid bg-4 text-center">
+    <p>Pizza Pizza&copy;</p>
+</footer>
+
+</body>
+</html>
