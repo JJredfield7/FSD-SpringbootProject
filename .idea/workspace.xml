@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d17e0957-536f-4c21-a411-f90ad405b901" name="Changes" comment="" />
+    <list default="true" id="d17e0957-536f-4c21-a411-f90ad405b901" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contactUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/editPayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/editPayment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/editProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/editProfile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/shoppingCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/shoppingCart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/userDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/userProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userProfile.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653879118009</updated>
       <workItem from="1653879122811" duration="198000" />
-      <workItem from="1653879359540" duration="2157000" />
+      <workItem from="1653879359540" duration="2283000" />
     </task>
     <servers />
   </component>
