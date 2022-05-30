@@ -40,7 +40,7 @@ public class RestaurantDeliveryApp implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		userRepository.deleteAllInBatch();
+		//userRepository.deleteAllInBatch();
 		restaurantInfoRepository.deleteAllInBatch();
 		orderRepository.deleteAllInBatch();
 		orderDetailsRepository.deleteAllInBatch();
@@ -53,6 +53,7 @@ public class RestaurantDeliveryApp implements CommandLineRunner {
 		int int_random = rand.nextInt(upperbound);
 		double double_random=rand.nextDouble();
 		float float_random=rand.nextFloat();
+		//====================================
 
 		Item sPizza = Item.builder().item_name("Small Pizza").item_price(4.99).itemSize(FoodSize.SMALL).itemType(ItemType.MAIN_DISH).itemDescription("A classic italian meal. 12").build();
 		itemRepository.save(sPizza);
