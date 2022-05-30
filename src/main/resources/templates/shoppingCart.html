@@ -25,18 +25,6 @@
         body {
             background-color: #c0ccdc;
         }
-        .cool-link::after {
-            content:'';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #36c2a6;
-            transition: width .3s;
-        }
-        .cool-link:hover::after {
-            width:100%;
-            transition: width .3s;
-        }
 
         .navbar {
             padding-top: 15px;
@@ -63,20 +51,24 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="cool-link navbar-brand" href="/">Super Pizza</a>
+            <a class="navbar-brand" href="/">Super Pizza</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="cool-link" href="/">Home</a></li>
-                <li><a class="cool-link" href="menu">Menu</a></li>
-                <li><a class="cool-link" href="contactUs">Contact Us</a></li>
-                <li><a class="cool-link" href="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="contactUs">Contact Us</a></li>
+                <li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
                 <li class="dropdown">
-                    <a class="cool-link dropdown-toggle" data-toggle="dropdown" href="#"><span sec:authentication="principal.username"></span>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span sec:authentication="principal.username">
 							<span class="caret"></span>
                     </a>
+                    <!--						<ul class="dropdown-menu">-->
+                    <!--							<li><a href="userDashboard">My Orders</a></li>-->
+                    <!--							<li><a href="userProfile">Edit Profile</a></li>-->
+                    <!--						</ul>-->
                 </li>
-                <li sec:authorize="isAuthenticated()"><a class="cool-link" th:href="@{/logout}">Logout</a></li>
+                <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
             </ul>
         </div>
     </div>
@@ -185,7 +177,7 @@
                                     <h5>123.76$</h5>
                                 </div>
 
-                                <button type="button" class="btn btn-success btn-block btn-lg"
+                                <button type="button" class="btn btn-dark btn-block btn-lg"
                                         data-mdb-ripple-color="dark">Confirm</button>
 
                             </div>
