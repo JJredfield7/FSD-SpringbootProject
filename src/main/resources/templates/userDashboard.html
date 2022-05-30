@@ -87,40 +87,30 @@
 
 <body>
 
-<div class="bg-1">
-    <div class="tableOrders">
-        <h3 class="text-center">Welcome UserName</h3>
-        <table class="list-group-item">
-            <p>Current Order</p>
-            <th>
-                <tr>
-                    <td>Order Number: </td>
-                </tr>
-                <tr>
-                    <td>Total price: </td>
-                </tr>
-                <tr>
-                    <td>Status: </td>
-                </tr>
-            </th>
-        </table>
+<div class="container">
 
-        <table class="list-group-item">
-            <p>Past Orders</p>
-            <th>
-                <tr>
-                    <td>Order Number: </td>
-                </tr>
-                <tr>
-                    <td>Total price: </td>
-                </tr>
-                <tr>
-                    <td>Status: </td>
-                </tr>
-            </th>
-        </table>
+    <h3>User Dashboard</h3>
 
-    </div>
+    <hr/>
+
+    <table class="table table-bordered table-striped">
+
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="u: ${userDash}">
+            <td th:text="${u.firstName}" />
+            <td th:text="${u.lastName}" />
+            <td th:text="${u.email}" />
+        </tr>
+        </tbody>
+
+    </table>
 </div>
 
 </body>
