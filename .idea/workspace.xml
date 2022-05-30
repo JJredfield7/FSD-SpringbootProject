@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba2a0155-7078-4b08-a6f5-cafd35dbe13d" name="Changes" comment="resolve merge conflict">
-<<<<<<< Updated upstream
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" afterDir="false" />
-=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contactUs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editPayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editPayment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editProfile.html" afterDir="false" />
@@ -19,7 +18,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shoppingCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shoppingCart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userDashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userProfile.html" afterDir="false" />
->>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
