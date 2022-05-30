@@ -72,6 +72,8 @@ public class RestaurantDeliveryApp implements CommandLineRunner {
 		itemRepository.save(mCheesyBread);
 		Item lCheesyBread = Item.builder().item_name("Large Cheesy Bread").item_price(6.99).itemSize(FoodSize.LARGE).itemType(ItemType.SIDE_DISH).itemDescription("A large cheesy treat").build();
 		itemRepository.save(lCheesyBread);
-		
+
+		RestaurantInfo firstLocation = RestaurantInfo.builder().restaurantName("Super Pizza").address("1234 Sainte-Catherine").phoneNumber("414 526 8698").build();
+		restaurantInfoRepository.save(firstLocation);
 	}
 }
