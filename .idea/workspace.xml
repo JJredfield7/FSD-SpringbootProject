@@ -4,7 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2a0155-7078-4b08-a6f5-cafd35dbe13d" name="Changes" comment="resolve merge conflict" />
+    <list default="true" id="ba2a0155-7078-4b08-a6f5-cafd35dbe13d" name="Changes" comment="resolve merge conflict">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration-login-spring-boot-security-thymeleaf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/registration-login-spring-boot-security-thymeleaf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contactUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shoppingCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shoppingCart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/RestaurantDeliveryApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/RestaurantDeliveryApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/config/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/config/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/FoodSize.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/FoodSize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Item$ItemBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Item$ItemBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/ItemType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/ItemType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/OrderDetails$OrderDetailsBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/OrderDetails$OrderDetailsBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/OrderDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/OrderDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/OrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/OrderStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Orders$OrdersBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Orders$OrdersBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/RestaurantInfo$RestaurantInfoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/RestaurantInfo$RestaurantInfoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/RestaurantInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/RestaurantInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/repository/ItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/repository/ItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/repository/OrderDetailsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/repository/OrderDetailsRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/repository/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/service/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/service/ItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/service/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/service/ItemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/web/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/web/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/web/dto/UserRegistrationDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/javaguides/springboot/web/dto/UserRegistrationDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contactUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/net/javaguides/springboot/RegistrationLoginSpringBootSecurityThymeleafApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/net/javaguides/springboot/RegistrationLoginSpringBootSecurityThymeleafApplicationTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +146,7 @@
       <updated>1653879118009</updated>
       <workItem from="1653879122811" duration="198000" />
       <workItem from="1653879359540" duration="2283000" />
-      <workItem from="1653884462318" duration="5775000" />
+      <workItem from="1653884462318" duration="5397000" />
     </task>
     <servers />
   </component>
