@@ -1,44 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
-      xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
-    <meta charset="ISO-8859-1">
-    <title>Super Pizza | Registration</title>
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-          crossorigin="anonymous">
-    <style>
-		.bg-1 {
-			background-color: #474e5d;
-			color: #ffffff;
-		}
-
-		.bg-4 {
-			background-color: #2f2f2f;
-			color: #ffffff;
-		}
-
-		.navbar {
-			padding-top: 15px;
-			padding-bottom: 15px;
-			border: 0;
-			border-radius: 0;
-			margin-bottom: 0;
-			font-size: 12px;
-			letter-spacing: 5px;
-		}
-
-		.navbar-nav li a:hover {
-			color: #1abc9c !important;
-		}
-
-    </style>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
 </head>
 <body>
 
-<<<<<<< Updated upstream
 	<!-- create navigation bar ( header) -->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
@@ -54,91 +25,55 @@
 			</div>
 		</div>
 	</nav>
-=======
-<!-- create navigation bar ( header) -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-
-<!--                data-toggle="collapse" data-target="#navbar" aria-expanded="false"-->
-<!--                aria-controls="navbar">-->
-                <span class="sr-only">Toggle navigation</span> <span
-                    class="icon-bar"></span> <span class="icon-bar"></span> <span
-                    class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Super Pizza</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="contactUs">Contact Us</a></li>
-                <li><a href="login">Log In</a></li>
-                <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
-            </ul>
-        </div>
->>>>>>> Stashed changes
-
-    </div>
-</nav>
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<!-- Create HTML registration form -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+	<!-- Create HTML registration form -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
 
-            <!-- success message -->
-            <div th:if="${param.success}">
-                <div class="alert alert-info">You've successfully registered
-                    to our awesome app!
-                </div>
-            </div>
+				<!-- success message -->
+				<div th:if="${param.success}">
+					<div class="alert alert-info">You've successfully registered
+						to our awesome app!</div>
+				</div>
 
-            <h1>Registration</h1>
+				<h1>Registration</h1>
 
-            <form th:action="@{/registration}" method="post" th:object="${user}">
-                <div class="form-group">
-                    <label class="control-label" for="firstName"> First Name </label>
-                    <input id="firstName" class="form-control" th:field="*{firstName}"
-                           required autofocus="autofocus"/>
-                </div>
+				<form th:action="@{/registration}" method="post" th:object="${user}">
+					<div class="form-group">
+						<label class="control-label" for="firstName"> First Name </label>
+						<input id="firstName" class="form-control" th:field="*{firstName}"
+							required autofocus="autofocus" />
+					</div>
 
-                <div class="form-group">
-                    <label class="control-label" for="lastName"> Last Name </label> <input
-                        id="lastName" class="form-control" th:field="*{lastName}"
-                        required autofocus="autofocus"/>
-                </div>
+					<div class="form-group">
+						<label class="control-label" for="lastName"> Last Name </label> <input
+							id="lastName" class="form-control" th:field="*{lastName}"
+							required autofocus="autofocus" />
+					</div>
 
-                <div class="form-group">
-                    <label class="control-label" for="email"> Email </label> <input
-                        id="email" class="form-control" th:field="*{email}" required
-                        autofocus="autofocus"/>
-                </div>
+					<div class="form-group">
+						<label class="control-label" for="email"> Email </label> <input
+							id="email" class="form-control" th:field="*{email}" required
+							autofocus="autofocus" />
+					</div>
 
-                <div class="form-group">
-                    <label class="control-label" for="password"> Password </label> <input
-                        id="password" class="form-control" type="password"
-                        th:field="*{password}" required autofocus="autofocus"/>
-                </div>
+					<div class="form-group">
+						<label class="control-label" for="password"> Password </label> <input
+							id="password" class="form-control" type="password"
+							th:field="*{password}" required autofocus="autofocus" />
+					</div>
 
-                <div class="form-group">
-                    <button type="submit" class="btn btn-success">Register</button>
-                    <span>Already registered? <a href="/" th:href="@{/login}">Login
+					<div class="form-group">
+						<button type="submit" class="btn btn-success">Register</button>
+						<span>Already registered? <a href="/" th:href="@{/login}">Login
 								here</a></span>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-<footer class="container-fluid bg-4 text-center">
-    <p>Super Pizza  <span class="glyphicon glyphicon-copyright-mark"></span></p>
-</footer>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
