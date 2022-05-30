@@ -32,8 +32,12 @@ public class RestaurantInfo {
     private String address;
 
     @NotNull
-    @Size(max = 50)
+    @Size(max = 100)
     @Column(name = "phoneNumber")
     private String phoneNumber;
 
+    @NotNull
+    @Size(max = 100)
+    @Column(name = "email")
+    private String email;
 }

@@ -64,9 +64,11 @@
     <h2 class="text-center">CONTACT US</h2>
     <div class="row">
         <div class="col-sm-5">
-            <p><span class="glyphicon glyphicon-map-marker"></span> 1234 Sainte-Catherine</p>
-            <p><span class="glyphicon glyphicon-phone"></span> 414 526 8698</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> super.pizza@email.com</p>
+            <span th:each="restaurant:${restaurantInfo}">
+                <p><span class="glyphicon glyphicon-map-marker" th:if="${restaurant.restaurantName == 'Super Pizza'}" th:text="${restaurant.address}"></span></p>
+                <p><span class="glyphicon glyphicon-phone" th:if="${restaurant.restaurantName == 'Super Pizza'}" th:text="${restaurant.phoneNumber}"></span></p>
+                <p><span class="glyphicon glyphicon-envelope" th:if="${restaurant.restaurantName == 'Super Pizza'}" th:text="${restaurant.email}"></span></p>
+            </span>
         </div>
         <div class="col-sm-7">
             <div class="row">
