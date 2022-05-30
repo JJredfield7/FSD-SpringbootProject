@@ -1,4 +1,4 @@
-package net.javaguides.springboot.web;
+package net.javaguides.springboot.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import net.javaguides.springboot.model.RestaurantInfo;
@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
-
 
 import java.util.List;
 import java.util.stream.Collectors;
