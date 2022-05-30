@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <meta charset="UTF-8">
-    <title>Super Pizza | Profile</title>
+    <title>Pizza Pizza | Profile</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -31,6 +33,8 @@
         .bg-4 {
           background-color: #2f2f2f;
           color: #ffffff;
+          padding-top: 30px;
+          padding-bottom: 30px;
         }
 
         .navbar {
@@ -51,7 +55,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -132,7 +136,7 @@
 
 </div>
 <footer class="container-fluid bg-4 text-center">
-    <p>Super Pizza  <span class="glyphicon glyphicon-copyright-mark"></span></p>
+    <p>Pizza Pizza&copy;</p>
 </footer>
 </body>
 </html>
