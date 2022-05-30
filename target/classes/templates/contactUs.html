@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <meta charset="UTF-8">
     <title>Super Pizza | Contact Us</title>
@@ -38,7 +40,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -62,9 +64,9 @@
     <h2 class="text-center">CONTACT US</h2>
     <div class="row">
         <div class="col-sm-5">
-            <p><span class="glyphicon glyphicon-map-marker"></span> Address</p>
-            <p><span class="glyphicon glyphicon-phone"></span> Phone</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> Email</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> 1234 Sainte-Catherine</p>
+            <p><span class="glyphicon glyphicon-phone"></span> 414 526 8698</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> super.pizza@email.com</p>
         </div>
         <div class="col-sm-7">
             <div class="row">
@@ -85,7 +87,7 @@
                     <textarea class="form-control" name="comments" placeholder="Comment" rows="5"></textarea><br>
                     <div class="row">
                         <div class="col-sm-12 form-group">
-                            <button class="btn btn-default pull-right" type="submit">Send</button>
+                            <button class="btn btn-success pull-right" type="submit">Send</button>
                         </div>
                     </div>
                 </form>
@@ -95,7 +97,7 @@
 </div>
 
 <footer class="container-fluid bg-4 text-center">
-    <p>Super Pizza&copy;</p>
+    <p>Super Pizza  <span class="glyphicon glyphicon-copyright-mark"></span></p>
 </footer>
 
 </body>

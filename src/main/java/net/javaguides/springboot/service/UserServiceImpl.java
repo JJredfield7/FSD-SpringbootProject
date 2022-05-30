@@ -2,6 +2,7 @@ package net.javaguides.springboot.service;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ import net.javaguides.springboot.repository.UserRepository;
 import net.javaguides.springboot.web.dto.UserRegistrationDto;
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl<findByUserId> implements UserService{
 
 	private UserRepository userRepository;
 	
@@ -51,6 +52,11 @@ public class UserServiceImpl implements UserService{
 	
 	private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Role> roles){
 		return roles.stream().map(role -> new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList());
+	}
+
+	@Override
+	public User findByUserId(Long id){
+		return userRepository.findById(id).orElse(null);
 	}
 	
 }

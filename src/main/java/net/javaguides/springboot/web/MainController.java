@@ -22,10 +22,17 @@ public class MainController {
 	@Autowired
 	private ItemRepository itemRepository;
 
-	@GetMapping({"/menu"})
+	@GetMapping("/menu")
 	public ModelAndView getAllItems() {
 		ModelAndView mav = new ModelAndView("menu");
 		mav.addObject("items", itemRepository.findAll());
+		return mav;
+	}
+
+	@GetMapping("/CartOrder")
+	public ModelAndView getUserOrder(){
+		ModelAndView mav = new ModelAndView("cartOrder");
+		mav.addObject("orders",getUserOrder());
 		return mav;
 	}
 }

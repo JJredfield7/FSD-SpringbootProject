@@ -22,7 +22,7 @@ public class Orders {
 
     @NotNull
     @Column(name = "orderTotal")
-    private int orderTotal;
+    private Double orderTotal;
 
     @Temporal(TemporalType.DATE)
     @Column(name="orderDate")
