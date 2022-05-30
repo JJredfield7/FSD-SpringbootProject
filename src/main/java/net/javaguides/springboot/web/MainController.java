@@ -2,10 +2,7 @@ package net.javaguides.springboot.web;
 
 import net.javaguides.springboot.repository.ItemRepository;
 import net.javaguides.springboot.repository.RestaurantInfoRepository;
-<<<<<<< HEAD
 import net.javaguides.springboot.repository.UserRepository;
-=======
->>>>>>> 688e8d699ea5b3961c489a7bc1fcfec1a3f13ff3
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,7 +40,6 @@ public class MainController {
 		mav.addObject("restaurants", restoRepository.findAll());
 		return mav;
 	}
-<<<<<<< HEAD
 
 	@Autowired
 	private UserRepository userRepository;
@@ -54,7 +50,5 @@ public class MainController {
 		mav.addObject("userDash", userRepository.findAll());
 		return mav;
 	}
-
-=======
->>>>>>> 688e8d699ea5b3961c489a7bc1fcfec1a3f13ff3
+	
 }
