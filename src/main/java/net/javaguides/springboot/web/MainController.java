@@ -30,12 +30,14 @@ public class MainController {
 		return mav;
 	}
 
-<<<<<<< HEAD
+
 	@GetMapping("/CartOrder")
-	public ModelAndView getUserOrder(){
+	public ModelAndView getUserOrder() {
 		ModelAndView mav = new ModelAndView("cartOrder");
-		mav.addObject("orders",getUserOrder());
-=======
+		mav.addObject("orders", getUserOrder());
+		return mav;
+	}
+
 	@Autowired
 	private RestaurantInfoRepository restoRepository;
 
@@ -43,7 +45,6 @@ public class MainController {
 	public ModelAndView getAllRestaurants() {
 		ModelAndView mav = new ModelAndView("contactUs");
 		mav.addObject("restaurants", restoRepository.findAll());
->>>>>>> 05525a59ad8149b07f2bcdc025700f244dda527a
 		return mav;
 	}
 }
