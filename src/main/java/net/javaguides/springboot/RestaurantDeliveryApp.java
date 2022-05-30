@@ -40,20 +40,11 @@ public class RestaurantDeliveryApp implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		//userRepository.deleteAllInBatch();
+		userRepository.deleteAllInBatch();
 		restaurantInfoRepository.deleteAllInBatch();
 		orderRepository.deleteAllInBatch();
 		orderDetailsRepository.deleteAllInBatch();
 		itemRepository.deleteAllInBatch();
-
-		//====================================
-		Random rand = new Random(); //instance of random class
-		int upperbound = 25;
-		//generate random values from 0-24
-		int int_random = rand.nextInt(upperbound);
-		double double_random=rand.nextDouble();
-		float float_random=rand.nextFloat();
-		//====================================
 
 		Item sPizza = Item.builder().item_name("Small Pizza").item_price(4.99).itemSize(FoodSize.SMALL).itemType(ItemType.MAIN_DISH).itemDescription("A classic italian meal. 12").build();
 		itemRepository.save(sPizza);
@@ -73,10 +64,6 @@ public class RestaurantDeliveryApp implements CommandLineRunner {
 		itemRepository.save(mCheesyBread);
 		Item lCheesyBread = Item.builder().item_name("Large Cheesy Bread").item_price(6.99).itemSize(FoodSize.LARGE).itemType(ItemType.SIDE_DISH).itemDescription("A large cheesy treat").build();
 		itemRepository.save(lCheesyBread);
-
-		//Tried creating a dummy admin user to ease debugging and not have to constantly log in
-//		User user = User.builder().firstName("admin").lastName("user").email("user@user.com").password("user").build();
-//		userRepository.save(user);
 
 		RestaurantInfo firstLocation = RestaurantInfo.builder().restaurantName("Super Pizza").address("1234 Sainte-Catherine").phoneNumber("414 526 8698").build();
 		restaurantInfoRepository.save(firstLocation);
