@@ -20,6 +20,18 @@
 		body {
 			background-color: #D3D3D3;
 		}
+		.cool-link::after {
+            content:'';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #36c2a6;
+            transition: width .3s;
+      }
+      .cool-link:hover::after {
+            width:100%;
+            transition: width .3s;
+      }
 		.navbar {
 			padding-top: 15px;
 			padding-bottom: 15px;
@@ -55,7 +67,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#" th:href="@{/}">Super Pizza</a>
+				<a class="cool-link navbar-brand" href="#" th:href="@{/}">Super Pizza</a>
 			</div>
 		</div>
 	</nav>
