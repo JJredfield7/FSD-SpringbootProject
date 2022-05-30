@@ -3,6 +3,7 @@ package net.javaguides.springboot.web;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import net.javaguides.springboot.model.RestaurantInfo;
 import net.javaguides.springboot.repository.ItemRepository;
+import net.javaguides.springboot.repository.OrderDetailsRepository;
 import net.javaguides.springboot.repository.RestaurantInfoRepository;
 import net.javaguides.springboot.service.RestaurantInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,9 @@ public class MainController {
 	@Autowired
 	private ItemRepository itemRepository;
 
+	@Autowired
+	private OrderDetailsRepository orderDetailsRepository;
+
 	@GetMapping("/menu")
 	public ModelAndView getAllItems() {
 		ModelAndView mav = new ModelAndView("menu");
@@ -46,13 +50,14 @@ public class MainController {
 	}
 
 
-	@GetMapping("/CartOrder")
+	@GetMapping("/cart")
 	public ModelAndView getUserOrder() {
 		ModelAndView mav = new ModelAndView("cartOrder");
-		mav.addObject("orders", getUserOrder());
+		mav.addObject("orders", orderDetailsRepository.findAll());
 		return mav;
 	}
 
+<<<<<<< Updated upstream
 	@GetMapping({"/contactUs"})
 	public String contactUs(Model model) {
 		List<RestaurantInfo> restaurantInfoList = this.restaurantInfoService.getAll();
@@ -61,6 +66,16 @@ public class MainController {
 		}).collect(Collectors.toList());
 		model.addAttribute("restaurantInfo", result);
 		return "contactUs";
+=======
+	@Autowired
+	private RestaurantInfoRepository restoRepository;
+
+	@GetMapping("/contactUs")
+	public ModelAndView getAllRestaurants() {
+		ModelAndView mav = new ModelAndView("contactUs");
+		mav.addObject("restaurants", restoRepository.findAll());
+		return mav;
+>>>>>>> Stashed changes
 	}
 
 
