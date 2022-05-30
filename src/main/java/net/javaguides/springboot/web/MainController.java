@@ -2,10 +2,6 @@ package net.javaguides.springboot.web;
 
 import net.javaguides.springboot.repository.ItemRepository;
 import net.javaguides.springboot.repository.RestaurantInfoRepository;
-<<<<<<< Updated upstream
-=======
-import net.javaguides.springboot.repository.UserRepository;
->>>>>>> Stashed changes
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,17 +39,4 @@ public class MainController {
 		mav.addObject("restaurants", restoRepository.findAll());
 		return mav;
 	}
-<<<<<<< Updated upstream
-=======
-
-	@Autowired
-	private UserRepository userRepository;
-
-	@GetMapping({"/userDashboard"})
-	public ModelAndView displayUserDash() {
-		ModelAndView mav = new ModelAndView("userDashboard");
-		mav.addObject("userDash", userRepository.findAll());
-		return mav;
-	}
->>>>>>> Stashed changes
 }
