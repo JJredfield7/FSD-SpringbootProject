@@ -27,12 +27,12 @@ public class RestaurantInfo {
     private String restaurantName;
 
     @NotNull
-    @Size(max = 100)
+    @Size(max = 200)
     @Column(name = "address")
     private String address;
 
     @NotNull
-    @Size(max = 10)
+    @Size(max = 50)
     @Column(name = "phoneNumber")
     private String phoneNumber;
 

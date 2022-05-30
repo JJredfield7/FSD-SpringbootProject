@@ -32,7 +32,7 @@ public class Item {
     @Min(0)
     @Max(1000000)
     @Column(name = "itemPrice")
-    private BigDecimal item_price;
+    private Double item_price;
 
     @NotNull
     @Size(max = 200)
