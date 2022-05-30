@@ -1,4 +1,4 @@
-package net.javaguides.springboot.controller;
+package net.javaguides.springboot.web;
 
 import net.javaguides.springboot.model.Item;
 import net.javaguides.springboot.model.OrderDetails;

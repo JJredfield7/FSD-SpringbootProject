@@ -7,10 +7,37 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	crossorigin="anonymous">
+	<style>
+		.bg-1 {
+			background-color: #474e5d;
+			color: #ffffff;
+		}
+
+		.bg-4 {
+			background-color: #2f2f2f;
+			color: #ffffff;
+		}
+		body {
+			background-color: #D3D3D3;
+		}
+		.navbar {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border: 0;
+			border-radius: 0;
+			margin-bottom: 0;
+			font-size: 12px;
+			letter-spacing: 5px;
+		}
+
+		.navbar-nav li a:hover {
+			color: #1abc9c !important;
+		}
+	</style>
 </head>
 <body>
 
-	<!-- create navigation bar ( header) -->
+
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -21,25 +48,31 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#" th:href="@{/}">Register now and save billions on food!</a>
+				<a class="navbar-brand" href="#" th:href="@{/}">Super Pizza</a>
 			</div>
 		</div>
 	</nav>
 
 <br>
 <br>
-	<!-- Create HTML registration form -->
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 
-				<!-- success message -->
 				<div th:if="${param.success}">
 					<div class="alert alert-info">You've successfully registered
 						to our awesome app!</div>
 				</div>
 
-				<h1>Registration</h1>
+				<br>
+				<br>
+				<br>
+				<h1 style="text-align:center">Register now!</h1>
+				<br>
+				<div th:if="${param.success}">
+					<div class="alert alert-info">You've successfully registered
+						to our awesome app!</div>
+				</div>
 
 				<form th:action="@{/registration}" method="post" th:object="${user}">
 					<div class="form-group">
@@ -67,9 +100,10 @@
 					</div>
 
 					<div class="form-group">
-						<button type="submit" class="btn btn-success">Register</button>
-						<span>Already registered? <a href="/" th:href="@{/login}">Login
-								here</a></span>
+						<button type="submit" class=" btn btn-primary">Register</button>
+						<br>
+						<br>
+						<span style="text-align:center">Already registered? <a href="/" th:href="@{/login}">Click here to connect!</a></span>
 					</div>
 				</form>
 			</div>

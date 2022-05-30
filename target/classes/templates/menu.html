@@ -19,8 +19,11 @@
         }
 
         .bg-4 {
-          background-color: #2f2f2f;
-          color: #ffffff;
+            background-color: #2f2f2f;
+            color: #ffffff;
+        }
+        body {
+            background-color: #c0ccdc;
         }
 
         .navbar {
@@ -57,13 +60,13 @@
                 <li><a href="contactUs">Contact Us</a></li>
                 <li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span sec:authentication="principal.username"/>
-                        <span class="caret"/>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span sec:authentication="principal.username">
+							<span class="caret"></span>
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="userDashboard">My Orders</a></li>
-                        <li><a href="userProfile">Edit Profile</a></li>
-                    </ul>
+                    <!--						<ul class="dropdown-menu">-->
+                    <!--							<li><a href="userDashboard">My Orders</a></li>-->
+                    <!--							<li><a href="userProfile">Edit Profile</a></li>-->
+                    <!--						</ul>-->
                 </li>
                 <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
             </ul>

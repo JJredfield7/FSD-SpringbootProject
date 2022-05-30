@@ -54,6 +54,7 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/">Home</a></li>
 					<li><a href="menu">Menu</a></li>
 					<li><a href="contactUs">Contact Us</a></li>
 					<li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
@@ -61,10 +62,10 @@
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span sec:authentication="principal.username">
 							<span class="caret"></span>
 						</a>
-						<ul class="dropdown-menu">
-							<li><a href="userDashboard">My Orders</a></li>
-							<li><a href="userProfile">Edit Profile</a></li>
-						</ul>
+<!--						<ul class="dropdown-menu">-->
+<!--							<li><a href="userDashboard">My Orders</a></li>-->
+<!--							<li><a href="userProfile">Edit Profile</a></li>-->
+<!--						</ul>-->
 					</li>
 					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
 				</ul>
