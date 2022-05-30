@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba2a0155-7078-4b08-a6f5-cafd35dbe13d" name="Changes" comment="resolve merge conflict">
       <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contactUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userDashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +112,7 @@
       <workItem from="1653884462318" duration="5397000" />
       <workItem from="1653917809158" duration="1950000" />
       <workItem from="1653932305582" duration="641000" />
-      <workItem from="1653938289933" duration="344000" />
+      <workItem from="1653938289933" duration="670000" />
     </task>
     <servers />
   </component>
