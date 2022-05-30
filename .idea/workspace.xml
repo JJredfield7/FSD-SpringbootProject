@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba2a0155-7078-4b08-a6f5-cafd35dbe13d" name="Changes" comment="resolve merge conflict">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/web/MainController.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contactUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editPayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editPayment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editProfile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shoppingCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shoppingCart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userProfile.html" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +48,12 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="29rlWZhMLy0djB8RFH1iD2k4UAN" />
   <component name="ProjectLevelVcsManager">
@@ -129,6 +136,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="resolve merge conflict" />

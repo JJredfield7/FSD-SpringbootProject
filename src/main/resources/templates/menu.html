@@ -39,6 +39,18 @@
         .navbar-nav li a:hover {
             color: #1abc9c !important;
         }
+        .cool-link::after {
+            content:'';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #36c2a6;
+            transition: width .3s;
+        }
+        .cool-link:hover::after {
+        width:100%;
+        transition: width .3s;
+        }
         footer {
             position:absolute;
             bottom:0;
@@ -57,16 +69,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Super Pizza</a>
+            <a class="navbar-brand cool-link" href="/">Super Pizza</a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse " id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Home</a></li>
-                <li><a href="menu">Menu</a></li>
-                <li><a href="contactUs">Contact Us</a></li>
-                <li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                <li><a class="cool-link" href="/">Home</a></li>
+                <li><a class="cool-link" href="menu">Menu</a></li>
+                <li><a class="cool-link" href="contactUs">Contact Us</a></li>
+                <li><a class="cool-link" href="cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span sec:authentication="principal.username">
+                    <a class="dropdown-toggle cool-link" data-toggle="dropdown" href="#"><span sec:authentication="principal.username"></span>
 							<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
@@ -74,7 +86,7 @@
                         <!--							<li><a href="userProfile">Edit Profile</a></li>-->
                     </ul>
                 </li>
-                <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+                <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}" class="cool-link">Logout</a></li>
             </ul>
         </div>
     </div>
@@ -115,7 +127,7 @@
     </table>
         <div class="col-sm-offset-2 col-sm-10">
             <a class="pull-right">
-                <button class="btn btn-primary" value="Submit" type="submit"><th:out value="AddItem"/>Add To Cart</button>
+                <button id="button" class="btn btn-primary" value="Submit" type="submit"><th:out value="AddItem"/>Add To Cart</button>
             </a>
         </div>
     </form:form>
